@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES=0 python predict.py \
+--backbone mobilev1025 \
+--model retinaface \
+--loadckpt ./trained/widerface/mobileV1X025/loss_2022_06_10_14_42_05/Epoch300-Total_Loss_10.9043.pth \
+--input_height 640 \
+--input_width 640 \
+--conf_thres 0.5 \
+--nms_thres 0.45 \
+--img_dir ./test/prediction/img/examples/ \
+--save_dir ./test/prediction/img/examples_results/ \
+--letterbox_image \

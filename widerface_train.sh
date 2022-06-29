@@ -1,0 +1,15 @@
+CUDA_VISIBLE_DEVICES=4,5,6,7 python train.py \
+--backbone mobilev1025 \
+--model retinaface \
+--dataloader widerface_dataload \
+--trainlist ./list/widerface_list/widerface_train_label_12880.txt \
+--batch_size 120 \
+--freeze_lr 0.0001 \
+--unfreeze_lr 0.001 \
+--trainloss multiboxloss \
+--logdir ./trained/widerface/mobileV1X025/ \
+--start_epoch 0 \
+--freeze_epoches 30 \
+--max_epoches 300 \
+--bbpretrain \
+--freeze_train \

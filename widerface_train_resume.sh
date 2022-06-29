@@ -1,0 +1,15 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py \
+--backbone mobilev1025 \
+--model retinaface \
+--dataloader widerface_dataload \
+--trainlist ./list/widerface_list/widerface_train_label_12880.txt \
+--batch_size 120 \
+--freeze_lr 0.0001 \
+--unfreeze_lr 0.001 \
+--trainloss multiboxloss \
+--logdir ./trained/widerface/mobileV1X025/ \
+--start_epoch 87 \
+--freeze_epoches 30 \
+--max_epoches 140 \
+--resume \
+--checkpoint_path ./trained/widerface/mobileV1X025/loss_2022_06_07_16_39_01/Epoch87-Total_Loss_9.5414.pth \
