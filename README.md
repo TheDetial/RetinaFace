@@ -9,7 +9,7 @@ face and 5 landmarks detection
 + tensorboard (1.6.0)
 
 ## Networks
-![retina](./flow/retinaface.png) 
+![retinaface](flow/retinaface.png) 
 
 ## Acknowledgement
 This work is mainly inspired by  
