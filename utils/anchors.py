@@ -6,7 +6,7 @@ import torch
 #@File      : anchor.py
 
 
-# 计算有效特征层对用的anchors尺寸大小
+# 计算有效特征层对应的anchors尺寸大小
 class Anchors(object):
     def __init__(self, cfg, image_size=None):
         super(Anchors, self).__init__()
